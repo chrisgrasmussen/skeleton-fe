@@ -1,5 +1,5 @@
 
-import './App.css'
+import './index.css'
 import PrivateRoute from './utils/PrivateRoute.jsx'
 import { AuthProvider } from './context/AuthContext.jsx'
 
