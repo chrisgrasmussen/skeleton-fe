@@ -34,7 +34,7 @@ export const AuthProvider = ({ children }) => {
             setAuthTokens(data)
             setUser(jwtDecode(data.access))
             localStorage.setItem('authTokens', JSON.stringify(data));
-            navigate('/');
+            navigate('/start');
 
         } else {
             alert('something went wrong')
@@ -75,15 +75,15 @@ export const AuthProvider = ({ children }) => {
         logoutUser: logoutUser,
     }
 
-    useEffect(() => {
-        let interval = setInterval(() => {
-            if (authTokens) {
-                updateToken()
-            }
-        }, 2000)
-        return () => clearInterval(interval)
+    // useEffect(() => {
+    //     let interval = setInterval(() => {
+    //         if (authTokens) {
+    //             updateToken()
+    //         }
+    //     }, 2000)
+    //     return () => clearInterval(interval)
 
-    }, [authTokens, loading])
+    // }, [authTokens, loading])
 
     return (
         <AuthContext.Provider value={contextData}>

@@ -5,19 +5,20 @@ import { AuthProvider } from './context/AuthContext.jsx'
 
 import HomePage from './pages/HomePage.jsx'
 import LoginPage from './pages/LoginPage.jsx'
+import StartDetailPage from './pages/StartDetailPage.jsx'
+
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Header from './components/Header.jsx'
-
-
 function App() {
 
   return (
     <>
       <AuthProvider>
-        <Header />
         <Routes>
-          <Route path="/" exact element={<PrivateRoute />} />
+          <Route path="/" exact element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/start" element={<PrivateRoute />} />
+          <Route path="start/:id" element={<StartDetailPage />} />
         </Routes>
       </AuthProvider>
     </>
