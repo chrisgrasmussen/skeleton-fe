@@ -22,7 +22,7 @@ const ViewCard = () => {
 
 
     return (
-        <div className="flex justify-center ">
+        <div className="flex justify-center">
             <div className="border w-[1200px] rounded-3xl">
                 <div className="h-full p-10">
                     {starts.map((start, index) => {
@@ -40,7 +40,7 @@ const ViewCard = () => {
                                         <h3 className="text-sm text-white ">Finish the Conversation</h3>
                                     </button>
                                     <div class="h-8 flex items-center justify-center bg-gray-50 rounded w-1/4">
-                                        <h3 className="text-sm">Posted 3 hours ago</h3>
+                                        <h3 className="text-sm">{start.timestamp}</h3>
                                     </div>
                                 </Link>
                             </div>

@@ -10,7 +10,6 @@ const ConversationsPage = () => {
         <div>
             <NavBar />
             <StartText />
-
             <StartCard />
         </div>
     )

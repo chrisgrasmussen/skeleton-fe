@@ -38,7 +38,7 @@ const StartDetailPage = () => {
     return (
         <>
             <NavBar />
-            <StartDetailText />
+            <StartDetailText start={data} completeData={completeData} />
             <StartDetailCard start={data} completeData={completeData} />
         </>
     )

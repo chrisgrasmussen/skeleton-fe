@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const HomeLink = () => {
     return (
-        <div className="pt-5 flex flex-row items-center justify-center">
+        <div className="pt-20 flex flex-row items-center justify-center">
             <Link to={'/start'} >
                 <button className='animate-bounce hover:animate-none bg-indigo-500 opacity-80 w-[900px] flex flex-row justify-between items-center p-5 rounded-2xl'>
                     <h1 className=' text-white'>See More Conversations</h1>
