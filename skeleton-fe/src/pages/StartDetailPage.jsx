@@ -6,6 +6,7 @@ import StartCard from '../components/StartCard.jsx'
 import StartText from '../components/StartText.jsx'
 import StartDetailText from '../components/StartDetailText.jsx'
 import StartDetailCard from '../components/StartDetailCard.jsx'
+import StartDetailReply from '../components/StartDetailReply.jsx'
 import { useParams } from 'react-router-dom'
 
 
@@ -39,6 +40,7 @@ const StartDetailPage = () => {
         <>
             <NavBar />
             <StartDetailText start={data} completeData={completeData} />
+            <StartDetailReply start={data} completeData={completeData} />
             <StartDetailCard start={data} completeData={completeData} />
         </>
     )
